@@ -1,0 +1,28 @@
+{
+  "name": "mygame",
+  "version": "1.0.0",
+  "authors": [
+    "Rafael"
+  ],
+  "description": "My Game",
+  "main": "src/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "component.json",
+    "package.json",
+    "lib",
+    "config",
+    "sample",
+    "test",
+    "tests",
+    "ngdoc_assets",
+    "Gruntfile.js",
+    "files.js"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
