@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                     compress: false,
                 },
                 files: {
-                    "./src/assets/css/email-client.css": "./src/assets/less/main.less"
+                    "./src/assets/css/mygame.css": "./src/assets/less/main.less"
                 }
             },
             prod: {
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
                     compress: true,
                 },
                 files: {
-                    "./src/assets/css/email-client.<%= pkg.version %>.min.css": "./src/assets/less/main.less"
+                    "./src/assets/css/mygame.<%= pkg.version %>.min.css": "./src/assets/less/main.less"
                 }
             }
         },
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                     'src/javascript/services/**/*.js',
                     'src/javascript/controllers/**/*.js'
                 ],
-                dest: './src/assets/js/email-client.js',
+                dest: './src/assets/js/mygame.js',
             }
         },
         uglify: {
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
             },
             frontend: {
                 files: {
-                    './src/assets/js/email-client.<%= pkg.version %>.min.js': './src/assets/js/email-client.js',
+                    './src/assets/js/mygame.<%= pkg.version %>.min.js': './src/assets/js/mygame.js',
                 }
             },
             vendor: {
@@ -67,11 +67,11 @@ module.exports = function(grunt) {
                     from: 'vendors.js',
                     to: 'vendors.<%= pkg.version %>.min.js'
                 }, {
-                    from: 'email-client.js',
-                    to: 'email-client.<%= pkg.version %>.min.js'
+                    from: 'mygame.js',
+                    to: 'mygame.<%= pkg.version %>.min.js'
                 }, {
-                    from: 'email-client.css',
-                    to: 'email-client.<%= pkg.version %>.min.css'
+                    from: 'mygame.css',
+                    to: 'mygame.<%= pkg.version %>.min.css'
                 }]
             },
             dev: {
@@ -81,11 +81,11 @@ module.exports = function(grunt) {
                     from: 'vendors.<%= pkg.version %>.min.js',
                     to: 'vendors.js'
                 }, {
-                    from: 'email-client.<%= pkg.version %>.min.js',
-                    to: 'email-client.js'
+                    from: 'mygame.<%= pkg.version %>.min.js',
+                    to: 'mygame.js'
                 }, {
-                    from: 'email-client.<%= pkg.version %>.min.css',
-                    to: 'email-client.css'
+                    from: 'mygame.<%= pkg.version %>.min.css',
+                    to: 'mygame.css'
                 }]
             }
         },
